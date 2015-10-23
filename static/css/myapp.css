@@ -1,0 +1,528 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700);
+@font-face {
+  font-family: FontAwesome;
+  src: url("../font-awesome-4.4.0/fonts/FontAwesome.otf");
+}
+/* line 1, ../sass/_main.scss */
+body {
+  background-color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 6, ../sass/_main.scss */
+.entete {
+  background-color: #333333;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 22px;
+  padding-left: 30px;
+}
+/* line 11, ../sass/_main.scss */
+.entete .titre {
+  color: #81c100;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+/* line 16, ../sass/_main.scss */
+.entete .description {
+  margin: 0;
+  padding: 0 0 0 15px;
+  line-height: 20px;
+  font-size: 10px;
+  color: #E3E3E3;
+}
+/* line 22, ../sass/_main.scss */
+.entete .description a {
+  color: #f35c54;
+}
+
+/* line 28, ../sass/_main.scss */
+.pied {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #333333;
+  color: #E3E3E3;
+  font-size: 10px;
+  padding-left: 30px;
+  line-height: 30px;
+  text-align: center;
+  clear: both;
+}
+
+/* line 40, ../sass/_main.scss */
+.conteneur {
+  overflow: hidden;
+}
+/* line 42, ../sass/_main.scss */
+.conteneur div {
+  float: left;
+}
+
+/* line 47, ../sass/_main.scss */
+.barreGauche {
+  width: 20%;
+  margin-bottom: -500em;
+  padding-bottom: 500em;
+}
+/* line 52, ../sass/_main.scss */
+.barreGauche a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10%;
+  background-color: rgba(51, 51, 51, 0.6);
+  color: #E3E3E3;
+  font-size: 16px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+/* line 63, ../sass/_main.scss */
+.barreGauche a:hover {
+  text-decoration: none;
+}
+/* line 66, ../sass/_main.scss */
+.barreGauche a:hover:not(.selected) {
+  color: #81c100;
+  border-left: 3px solid #81c100;
+}
+/* line 70, ../sass/_main.scss */
+.barreGauche #dernier {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 73, ../sass/_main.scss */
+.barreGauche .selected {
+  border-left: 3px solid #E3E3E3;
+}
+
+/* line 78, ../sass/_main.scss */
+.contenu {
+  background-color: #E3E3E3;
+  width: 80%;
+  border-left: 3px solid #333333;
+  -moz-box-shadow: -5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: -5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: -5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+/* line 84, ../sass/_main.scss */
+.contenu a, .contenu a:visited {
+  color: #333333;
+}
+
+/* line 89, ../sass/_main.scss */
+.email {
+  height: 30px;
+  cursor: pointer;
+  width: 100%;
+  clear: both;
+}
+/* line 94, ../sass/_main.scss */
+.email span, .email i {
+  text-overflow: ellipsis;
+  line-height: 30px;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  float: left;
+  white-space: nowrap;
+}
+/* line 103, ../sass/_main.scss */
+.email .objet {
+  width: 58%;
+  padding-right: 10px;
+  color: #666666;
+  font-weight: normal;
+}
+/* line 108, ../sass/_main.scss */
+.email .objet b {
+  color: #333333;
+  font-weight: 900;
+}
+/* line 114, ../sass/_main.scss */
+.email .expediteur {
+  width: 22%;
+  padding-right: 10px;
+}
+/* line 119, ../sass/_main.scss */
+.email .date {
+  width: 15%;
+}
+/* line 123, ../sass/_main.scss */
+.email .etoile {
+  color: #81c100;
+  width: 5%;
+  text-align: center;
+}
+
+/* line 129, ../sass/_main.scss */
+.email:not(.nouveau) > a > span.objet > b {
+  font-weight: normal;
+}
+
+/* line 132, ../sass/_main.scss */
+.nouveau {
+  font-weight: 900;
+}
+
+/* line 136, ../sass/_main.scss */
+.email:nth-child(even) {
+  background-color: white;
+}
+
+/* line 140, ../sass/_main.scss */
+.email:hover {
+  background-color: #bdbdbd;
+}
+
+/* line 144, ../sass/_main.scss */
+h1.objet {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px 0 0 10px;
+  line-height: 20px;
+}
+
+/* line 151, ../sass/_main.scss */
+h2 {
+  margin: 0;
+  padding: 5px 0 0 10px;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+/* line 158, ../sass/_main.scss */
+h2.expediteur {
+  float: left;
+}
+/* line 160, ../sass/_main.scss */
+h2.expediteur a {
+  color: #81c100;
+}
+
+/* line 165, ../sass/_main.scss */
+h2.date {
+  float: right;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+/* line 171, ../sass/_main.scss */
+p.texte {
+  padding: 40px 20px 0 20px;
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url("../font-awesome-4.4.0/fonts/FontAwesome.otf");
+}
+/* line 6, ../sass/start.scss */
+.window {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 13, ../sass/start.scss */
+.window:nth-child(1) {
+  background: #333333;
+  top: 0%;
+}
+
+/* line 13, ../sass/start.scss */
+.window:nth-child(2) {
+  background: #02C9C9;
+  top: 100%;
+}
+
+/* line 13, ../sass/start.scss */
+.window:nth-child(3) {
+  background: #BCCF3D;
+  top: 200%;
+}
+
+/* line 13, ../sass/start.scss */
+.window:nth-child(4) {
+  background: #FFC300;
+  top: 300%;
+}
+
+/* line 13, ../sass/start.scss */
+.window:nth-child(5) {
+  background: #E8A0B8;
+  top: 400%;
+}
+
+/* line 19, ../sass/start.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 23, ../sass/start.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 27, ../sass/start.scss */
+.menu {
+  background-color: #E3E3E3;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+/* line 32, ../sass/start.scss */
+.menu .logo {
+  height: 70px;
+  margin: 15px 0 15px 15px;
+  display: block;
+  float: left;
+}
+/* line 38, ../sass/start.scss */
+.menu .comment {
+  float: left;
+  margin: 15px 15px 15px 0;
+  line-height: 70px;
+  font-size: 28px;
+}
+/* line 45, ../sass/start.scss */
+.menu .menu-item {
+  float: right;
+  margin: 15px 35px 15px 0;
+  line-height: 70px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 52, ../sass/start.scss */
+.menu .menu-item i {
+  font-size: 22px;
+  color: #BCCF3D;
+  vertical-align: middle;
+}
+/* line 57, ../sass/start.scss */
+.menu .menu-item a {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 61, ../sass/start.scss */
+.menu .menu-item a:hover {
+  color: #02C9C9;
+}
+
+/* line 67, ../sass/start.scss */
+.defil {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 75, ../sass/start.scss */
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+/* line 83, ../sass/start.scss */
+.content {
+  z-index: 6;
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  color: #E3E3E3;
+  left: 5%;
+}
+/* line 90, ../sass/start.scss */
+.content h1 {
+  font-family: "Droid Serif", serif;
+  font-size: 42px;
+}
+/* line 94, ../sass/start.scss */
+.content .button {
+  display: block;
+  background-color: #02C9C9;
+  color: #E3E3E3;
+  font-weight: 700;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 12px;
+  margin: 35px 0 10px 25%;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+/* line 107, ../sass/start.scss */
+.content .button:hover {
+  text-decoration: none;
+  background-color: #02baba;
+}
+/* line 112, ../sass/start.scss */
+.content .nul {
+  display: block;
+  color: #E3E3E3;
+  width: 50%;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px 0 10px 25%;
+}
+/* line 120, ../sass/start.scss */
+.content .nul:hover {
+  text-decoration: none;
+  color: #02C9C9;
+}
+
+/* line 126, ../sass/start.scss */
+.leftPanel {
+  display: block;
+  width: 29%;
+  height: 100%;
+  float: left;
+  background: url("../images/tv_bg.png") no-repeat;
+  background-size: 60%;
+  z-index: 3;
+  position: relative;
+}
+/* line 136, ../sass/start.scss */
+.leftPanel h1 {
+  width: 100%;
+  padding: 20px;
+  font-size: 42px;
+  font-weight: 900;
+  color: #FFC300;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 0px #f35c54;
+}
+/* line 146, ../sass/start.scss */
+.leftPanel p {
+  width: 100%;
+  padding: 0 20px;
+  color: #E3E3E3;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/* line 155, ../sass/start.scss */
+.rightPanel {
+  display: block;
+  width: 66.5%;
+  height: 100%;
+  float: left;
+  margin-left: 4.5%;
+  z-index: 3;
+  position: relative;
+  background-color: #333333;
+}
+/* line 165, ../sass/start.scss */
+.rightPanel img {
+  height: 40%;
+  float: left;
+}
+/* line 170, ../sass/start.scss */
+.rightPanel p {
+  float: left;
+  font-size: 28px;
+  padding-top: 8%;
+  padding-left: 2%;
+  font-family: "Lato", sans-serif;
+  color: #E3E3E3;
+  font-weight: 700;
+}
+/* line 179, ../sass/start.scss */
+.rightPanel p .name {
+  color: #28D244;
+  text-shadow: 0px 0px 4px black;
+}
+/* line 183, ../sass/start.scss */
+.rightPanel p .small {
+  font-size: 18px;
+  float: right;
+}
+
+/* line 190, ../sass/start.scss */
+.login {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #02C9C9;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 0 15px;
+  border: 0;
+  float: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #E3E3E3;
+}
+/* line 61, ../../../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.login:-moz-placeholder {
+  color: #333333;
+  text-align: right;
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* line 64, ../../../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.login::-moz-placeholder {
+  color: #333333;
+  text-align: right;
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* line 67, ../../../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.login:-ms-input-placeholder {
+  color: #333333;
+  text-align: right;
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* line 56, ../../../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.login::-webkit-input-placeholder {
+  color: #333333;
+  text-align: right;
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 209, ../sass/start.scss */
+.login:focus {
+  outline: none;
+}
+
+/* line 213, ../sass/start.scss */
+.loginBtn {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  margin-left: -70px;
+  font-size: 50px;
+  color: #bdbdbd;
+  background-color: transparent;
+  padding: 0;
+  line-height: 70px;
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 227, ../sass/start.scss */
+.loginBtn:hover {
+  color: #02C9C9;
+}

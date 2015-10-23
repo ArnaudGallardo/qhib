@@ -1,0 +1,7 @@
+if not auth.login_bare(email, password):
+            db.auth_user.insert(
+                first_name=None,
+                last_name=None,
+                email=email,
+                password=db.auth_user.password.requires[0](password)[0]
+            )

@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700);
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../font-awesome-4.4.0/fonts/FontAwesome.otf");
+}
+
+$ftLato: 'Lato', sans-serif;
+$ftDroid: 'Droid Serif', serif;
+$ftRale: 'Raleway', sans-serif;
+
+$colors : (#333333,#02C9C9,#BCCF3D,#FFC300,#E8A0B8);
+
+$clrBackground: rgb(243,92,84);//#E8A0B8
+$clrDark: nth($colors,1);
+$clrHilight: rgb(129,193,0);
+$clrContrast: #E3E3E3;
+$clrLightHi: rgb(167,144,84);
+$szeCorner: 10px;
+
+$szeMenu: 70px;

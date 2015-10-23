@@ -1,0 +1,23 @@
+{{extend 'layout.html'}}
+<div class="entete">
+    <h1 class="titre">{{=T('Gmél')}}</h1>
+    <p class="description">by <a href="https://fr.wikipedia.org/wiki/Camembert_(fromage)">Camembert Company</a></p>
+</div>
+<div class="conteneur">
+    <div class="barreGauche">
+        <a>{{=T('Compose Mail')}}</a>
+        <a href="{{=URL('default','index')}}">{{=T('Inbox')}}</a>
+        <a id="dernier">{{=T('Trash')}}</a>
+    </div>
+
+    <div class="contenu">
+        <h1 class="objet">{{=email['subject']}}</h1>
+        <h2 class="expediteur">from <a href="mailto:{{=email['from']}}">{{=email['from']}}</a></h2>
+        <h2 class="date">{{=email['date']}}</h2>
+        <p class="texte">{{=XML(email['text'].replace('\n', '<br />'),sanitize=True, permitted_tags=['br/'])}}</p>
+        <!-- XML replace function explained by Anthony here : http://stackoverflow.com/questions/10578774/modifying-sqlform-text-output-line-breaks-paragraphs-web2py-framework -->
+    </div>
+</div>
+<div class="pied">
+    <p>Homework 2 - CMPS 183 - Arnaud-Marie GALLARDO</p>
+</div>

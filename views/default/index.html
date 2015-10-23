@@ -1,0 +1,6 @@
+{{if not auth.is_logged_in():}}
+        {{include "start.html"}}
+{{else:}}
+        <p>Connected {{=auth.user.first_name}}</p>
+        <a href="{{=URL('default','user', args=['logout'], vars=dict(_next='/tv/default/index'))}}">Logout</a>
+{{pass}}

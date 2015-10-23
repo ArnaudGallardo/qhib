@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue sur Qhib.tv</title>
+    <!-- include stylesheets -->
+    <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/bootstrap-theme.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap3.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/myapp.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static', 'font-awesome-4.4.0/css/font-awesome.min.css')}}"/>
+    <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+    {{include 'web2py_ajax.html'}}
+    <!-- All JavaScript at the bottom, except for Modernizr which enables
+         HTML5 elements & feature detects -->
+    <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+    <script src="{{=URL('static','js/jquery.windows.js')}}"></script>
+    <script src="{{=URL('static','js/start.js')}}"></script>
+    <script src="{{=URL('static','js/jquery.knob.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
+        <![endif]-->
+</head>
+<body>
+<section class="window">
+    <div class="menu">
+        <img src="{{=URL('static','images/logo.png')}}" class="logo"/>
+        <div class="comment"><span class="testing">&#xf090;</span></div>
+        <div class="menu-item">
+            {{=dico["form"]}}
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <img src="{{=URL('static','images/game_bg/1.png')}}" class="defil" id="defil1"/>
+    <img src="{{=URL('static','images/game_bg/2.png')}}" class="defil" id="defil2"/>
+    <img src="{{=URL('static','images/bg1.png')}}" class="bg"/>
+    <div class="content">
+        <h1>C'est l'heure de streamer.</h1>
+        <p>Rejoignez la famille Qhib.tv et tentez votre chance pour devenir streameur.<br/>Ou venez simplement les noter, c'est marrant aussi.</p>
+        <a href="#" class="button">S'inscrire</a>
+        <a href="#" class="nul">Regarder le stream sur hitbox.tv sans vraiment s'amuser...</a>
+    </div>
+</section>
+<section class="window">
+    <img src="{{=URL('static','images/bg2.png')}}" class="bg"/>
+    <div class="leftPanel">
+        <h1>Le streaming pour tous.</h1>
+        <p>Découvrez la chaîne qui vous donne le pouvoir.</p>
+        <p style="margin-left: 30px">21923 utilisateurs</p>
+        <p style="margin-left: 30px">10212 abonnés</p>
+    </div>
+    <div class="rightPanel">
+        <img src="{{=URL('static','images/zerator.png')}}"/>
+        <p>Un projet soutenu par <span class="name">ZeratoR</span> ! <br/><span class="small">Enfin si il est d'accord hein...</span></p>
+        <span style="clear: both;"></span>
+        <object type="text/html" data="http://www.youtube.com/embed/PzMO-hIv9AM" style="width:100%; height: 60%;"></object>
+    </div>
+</section>
+<section class="window"><p>3</p></section>
+<section class="window"><p>4</p></section>
+<section class="window"><p>5</p></section>
+</body>
+</html>
+
+
+{{#TODO : Regler la position du content 1, trouver du texte, dons...}}
